@@ -63,7 +63,7 @@ body{
   }
 
 .topimg{
-  text-align: center;
+  text-align: center; 
 }
 
 .nav .icon {
@@ -79,6 +79,9 @@ body{
     margin-top: 20px;
     display: block;
   }
+  .nav li {
+    width: auto;
+  }
 }
 
 /* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
@@ -93,6 +96,9 @@ body{
     float: none;
     display: block;
     text-align: center;
+  }
+  .topimg img{
+    visibility: hidden;
   }
 }
   
