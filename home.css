@@ -7,8 +7,8 @@ body{
   background-image: url(images/BG/kisspng-cinema-film-clip-art-movie-theatre-5ab8ee311b66d1.8580104115220690411122.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: 25px;
   background-color: #000000;
+  background-position-y: -50px;
 }
 
 /* Custom Samarkan Font */
@@ -28,6 +28,7 @@ body{
 /* Custom Navigation Bar */
 
   .nav { 
+    position: relative;
     list-style-type: none;
     text-align: center;
     /* background-color: #421D0A; */
@@ -39,11 +40,11 @@ body{
   }
   
   .nav li {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
     font-size: 26px;
-    padding: 15px 15px 15px 15px;
-    width: 300px;
-    font-family: samarkannormal;  
+    font-family: samarkannormal; 
+    width: 19%;
   }
 
   .nav a{
@@ -56,14 +57,17 @@ body{
   }
 
 #h{
-  background-color: cornsilk;
+  background-color: #fff8dc;
   color: #FFC40D;
   padding: 15px 75px 15px 75px;
 
   }
 
-.topimg{
-  text-align: center; 
+.topimg img{
+  margin: 0px auto;
+  flex-direction: row;
+  display: inline-flex;
+  object-fit: ;
 }
 
 .nav .icon {
@@ -71,35 +75,75 @@ body{
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1080px) {
-  .nav li:not(:first-child) {display: none;}
+@media screen and (max-width: 1500px) {
+  /* .nav li:not(:first-child) {display: none;}
   .nav a.icon {
+    position: absolute;
     float: right;
-    margin-right: 10%;
-    margin-top: 20px;
     display: block;
+    top: 20px;
+    right: 50px;
+  } */
+  body{
+    background-position-y: 35px;
   }
-  .nav li {
-    width: auto;
-  }
+
 }
 
 /* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1500px) {
   .nav.responsive {position: relative;}
   .nav.responsive a.icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    top: 20px;
+    right: 50px;
   }
   .nav.responsive li {
     float: none;
     display: block;
     text-align: center;
   }
+
   .topimg img{
-    visibility: hidden;
+    /* display: none; */
   }
+  
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1200px) {
+  /* .nav li:not(:first-child) {display: none;}
+  .nav a.icon {
+    position: absolute;
+    float: right;
+    display: block;
+    top: 20px;
+    right: 50px;
+  } */
+  body{
+    background-position-y: 35px;
+  }
+
+}
+
+/* The "responsive" class is added to the nav with JavaScript when the user clicks on the icon. This class makes the nav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1200px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+  .nav.responsive li {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .topimg img{
+    /* display: none; */
+  }
+  
 }
   
 /* -------------------------------------------------------------  */
@@ -111,7 +155,10 @@ body{
 }
 
 .r1 img{
-  width: 1090px;
+  width: 72.5%;
+  margin-top: 2px;
+  position: absolute;
+  left: 13.8%;
 }
 
 /* .slideshow-container {
@@ -127,11 +174,12 @@ body{
   box-shadow: 0 7.5px 5px rgba(0, 0, 0, 0.16);
   height: 450px;
   padding-top: 20px;
-  margin: 280px 50px 50px 50px;
+  margin: 60% 50px 50px 50px;
   background-color:cornsilk;
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+  position: relative;
+  /* top: 100%; */
 }
 
 /* ----------------------------------------------------------- */

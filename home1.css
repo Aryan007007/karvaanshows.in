@@ -1,0 +1,155 @@
+/* Variables */
+:root{
+    --primary: #000000;
+    --nav1: #5f0201;
+    --secondary: #fff8dc;
+    --shadow-btn: 0 1px 5px rgba(0, 0, 0, 0.8);
+    --shadow-nav: 0 4px 10px rgba(0, 0, 0, 0.4); 
+}
+
+html{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: var(--primary);
+    background-repeat: no-repeat;
+    background-size: contain;
+    line-height: 1.5; /*line spacing*/
+    margin: 0;
+}
+header{
+    background-image: url(images/BG/Group\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -60px;
+    height: 100vh;
+
+}
+
+@media screen and (max-width: 1150px){
+    header{
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    header{
+        background-size: contain;
+    }
+}
+
+
+.btn{
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none; /* removing underline*/
+    border: none;
+    box-shadow: var(--shadow-btn);
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    display: grid;
+    margin: none;
+}
+
+
+
+/* Navigation */
+
+/* Custom Samarkan Font */
+@font-face {
+    font-family: 'samarkannormal';
+    src: url('./font/samarkannormal-rxge-webfont.woff2') format('woff2'),
+         url('./fonts/samarkannormal-rxge-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+.main-nav ul{
+
+    background: var(--nav1);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+    list-style: none;
+    text-align: center;
+    font-family: samarkannormal;
+
+    padding: 1.5vh 2vh;
+    margin: 0;
+    box-shadow: var(--shadow-nav);
+    border-radius: 0 0 25px 25px;
+
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 1.6rem;
+}
+
+.main-nav a.icon{
+    display: none;
+}
+
+/* logo */
+
+.logo img{
+    display: grid;
+    margin: 0 auto;
+    width: 15vw;
+    ;
+}
+
+/* Main Image */
+
+.main-img{
+
+    display: grid;
+    margin: 8vh 14vw 0 14.5vw;
+    height: 80vh;
+
+}
+
+.container{
+    background-color: var(--secondary);
+    padding-top: 1px;
+    margin: 20px 10px;
+}
+
+.container .news-tab{
+    display: grid;
+    grid-gap: 4vw;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 3vh 5vw;
+}
+
+.container .news-tab .card-n{
+    background-color: var(--secondary);
+    box-shadow: var(--shadow-nav);
+    text-align: center;
+    padding: 20px;
+    justify-items: end;
+
+}
+
+.card-n img{
+
+    max-width: 100%;
+    
+}
+
+/* footer */
+footer{
+    color: var(--secondary);
+    text-align: center;
+    padding: 10vh 0;
+}
