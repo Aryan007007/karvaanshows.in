@@ -17,7 +17,12 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     line-height: 1.5; /*line spacing*/
+}
+
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 header{
     background-image: url(images/BG/Group\ 2.png);
@@ -31,14 +36,25 @@ header{
 @media screen and (max-width: 1150px){
     header{
         background-size: contain;
+        height: 70vh;
+        background-position: 0 0;
     }
 }
 
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 600px){
+    .main-nav li{
+        display: none;
+    }
+    .main-nav li:nth-child(3){
+        display: inline;
+    }
     header{
-        background-size: contain;
+        height:40vh;
     }
 }
+
+
+
 
 
 .btn{
@@ -78,6 +94,8 @@ img{
     background: var(--nav1);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
     
     list-style: none;
     text-align: center;
@@ -109,35 +127,30 @@ img{
     ;
 }
 
-/* Main Image */
 
-.main-img{
-
-    display: grid;
-    margin: 8vh 14vw 0 14.5vw;
-    height: 80vh;
-
-}
 
 .container{
     background-color: var(--secondary);
-    padding-top: 1px;
-    margin: 20px 10px;
+    padding-top: 10px;
+    overflow: hidden;
 }
 
-.container .news-tab{
+.news-tab{
     display: grid;
-    grid-gap: 4vw;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding: 3vh 5vw;
+    grid-gap: 5vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px 50px;
+    overflow: hidden;
 }
 
 .container .news-tab .card-n{
     background-color: var(--secondary);
     box-shadow: var(--shadow-nav);
     text-align: center;
-    padding: 20px;
-    justify-items: end;
+    padding: 1vw 2vw;
+    justify-content: center;
+    line-height: 4rem;
+
 
 }
 
