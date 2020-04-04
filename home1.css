@@ -46,7 +46,11 @@ header{
         display: none;
     }
     .main-nav li:nth-child(3){
-        display: inline;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-left: 32.5vw;
+
     }
     header{
         height:40vh;
