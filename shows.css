@@ -3,6 +3,13 @@
     box-sizing: border-box;
   }
 
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+
 /* Custom Samarkan Font */
 @font-face {
     font-family: 'samarkannormal';
@@ -14,7 +21,7 @@
 
 
 body{
-    background: fixed;
+    background: white;
 }
 
 

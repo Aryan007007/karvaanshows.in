@@ -4,6 +4,12 @@ body {
 
 html {
   box-sizing: border-box;
+  
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
 *, *:before, *:after {
@@ -80,7 +86,6 @@ text-align: center;
 
 .about-section {
   padding: 50px;
-  margin: 0 2.5% 0 2.5%;
   /* border-radius: 25px; */
   /* box-shadow: 0 7.5px 5px rgba(0, 0, 0, 0.16); */
   /* background-color:cornsilk; */
@@ -131,9 +136,7 @@ text-align: center;
 #borderimage{
   border: 24px solid transparent;
   padding: 25px;
-  border-image: url(images/borders/kisspng-picture-frame-lovely-old-golden-frame-5a70526088a0c0.6946531515173105605596.png) 55 round;
-  box-shadow: 7.5px 7.5px 20px rgba(0, 0, 0, 0.16);
-}
+  border-image: url(images/borders/kisspng-picture-frame-lovely-old-golden-frame-5a70526088a0c0.6946531515173105605596.png) 55 round;}
 
 /* -------------------------------------------------------------------- */
 
