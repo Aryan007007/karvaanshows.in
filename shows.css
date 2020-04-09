@@ -1,3 +1,11 @@
+:root{
+  --primary: #000000;
+  --nav1: #5f0201;
+  --secondary: #fff8dc;
+  --shadow-btn: 0 1px 5px rgba(0, 0, 0, 0.8);
+  --shadow-nav: 0 4px 10px rgba(0, 0, 0, 0.4); 
+}
+
 *{
     margin: auto;
     box-sizing: border-box;
@@ -21,7 +29,8 @@
 
 
 body{
-    background: white;
+    background: grey;
+    font-family: calibri;
 }
 
 
@@ -126,13 +135,12 @@ body{
 
 /* 'footer */
 
-.footer {
-    position: relative;
-    width: 100%;
-    background-color: #421D0A;
-    color: #FFC40D;
-    text-align: center;
-    padding: 1%;
-  }
+footer{
+  color: var(--secondary);
+  text-align: center;
+  padding: 10vh 0;
+  overflow: hidden;
+  background-color: black;
+}
   
   /* ------------------------------------------------------------- */
