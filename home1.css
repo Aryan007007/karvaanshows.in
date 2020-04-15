@@ -138,7 +138,7 @@ a.icon{
 
     .mainNav a.icon{
         position: absolute;
-        top: 10px;
+        top: 1.75vh;
         right: 20px;
         display: block; 
         text-align: center;       
@@ -155,11 +155,11 @@ a.icon{
 }
 
 @media screen and (max-width: 500px) {
-    .mainNav.responsive {position: relative;}
+    .mainNav.responsive {position: fixed; width: 96%;}
     .mainNav.responsive a.icon {
       position: absolute;
       right: 20px;
-      top: 10px;
+      top: 1.75vh;
     }
     .mainNav.responsive a {
       float: none;

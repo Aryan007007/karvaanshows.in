@@ -80,17 +80,26 @@ text-align: center;
 
 /* Contact Cards */
 
-.column {
+.contact-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  align-self: center;
+  justify-content: center;
+}
+
+/* .column {
   float: left;
   width: 33.3%;
   margin-bottom: 50px;
   padding: 0 8px;
   text-align: center;
-}
+} */
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+  margin: 0 40px 80px 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-section {
@@ -129,10 +138,11 @@ text-align: center;
   background-color: #555;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
+@media screen and (max-width: 500px) {
+  .contact-grid{
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
   }
 }
 
