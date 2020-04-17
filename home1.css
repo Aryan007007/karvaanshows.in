@@ -18,7 +18,7 @@ html{
 }
 
 body{
-    background-color: var(--primary);
+    background-color: var(--nav1);
     line-height: 1.5; /*line spacing*/
     font-family: Lucida console;
 }
@@ -186,25 +186,32 @@ a.icon{
   }
 
 .social{
-    margin:5vh 0;
+    margin:3vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    
     text-align: center;
 }
 
 .social-txt{
     color: blanchedalmond;
-    align-self: center;
+    justify-self: end;
     font-family: calibri;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+.social-icons{
+    align-self: center;
 }
 
 .social-icons a{
     color: blanchedalmond;
-    font-size: 3rem;
+    font-size: 1.2rem;
     text-decoration: none;
-    align-items: center;
+    vertical-align: middle;
+}
+
+.social-icons a:not(:first-child){
+    margin-left: 50px;
 }
 @media screen and (max-width: 500px){
     .social{
