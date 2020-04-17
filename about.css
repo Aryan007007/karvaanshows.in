@@ -38,43 +38,111 @@ html {
 
 
 /* custom nav */
-.nav {
-  background-color: yellow; 
-  list-style-type: none;
+.mainNav{
+  position: fixed;
+  width: 100vw;
+
+  background: #421D0A;
   text-align: center;
-  background-color: #421D0A;
-  border-radius: 0px 0px 25px 25px;
-  box-shadow: 0 7.5px 5px rgba(0, 0, 0, 0.16);
+  font-family: samarkannormal;
+
+  padding: 1.5vh 2vh;
   margin: 0;
-  padding: 0;
+  box-shadow: var(--shadow-nav);
+  border-radius: 0 0 25px 25px;
+
 }
 
-.nav li {
-  display: inline-block;
-  font-size: 26px;
-  padding: 15px 15px 15px 15px;
-  width: 300px;
-  font-family: samarkannormal;  
+.brick{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
-.nav a{
-  color: #f2f2f2;
+.mainNav a{
   text-decoration: none;
+  color: var(--secondary);
+  font-size: 1.6rem;
 }
 
-.nav a:hover { 
-  color: #FFC40D;
+a.icon{
+  display: none;
 }
 
-#h{
-background-color: cornsilk;
-color: #FFC40D;
-padding: 15px 75px 15px 75px;
+/* logo */
+
+.logo img{
+  display: inline-block;
+  margin: 0;
+  width: 15vw;
+  position: absolute;
+  top:0;
+  left: 42.5vw;
 }
 
-.topimg{
-text-align: center;
+.logo-2{
+  display: none;
 }
+
+@media screen and (max-width: 500px){
+  .brick{
+      display: grid;
+      grid-template-columns: 1fr;
+      
+
+  }
+
+  .mainNav{
+      border-radius: 50px;
+      top: 10px;
+      left: 6vw;
+      width: 90vw;
+
+  }
+
+  .mainNav a:not(:nth-child(2)){
+      display: none;
+  }
+
+  .logo-2{
+      display: inline-block;
+  }
+
+  .logo-2 img
+  {  
+      width: 90px;
+      position: absolute;
+      left: -3.5vw;
+      top: -0.5vh;
+  
+  }
+
+  .logo{
+      display: none;
+  }
+
+  
+
+  .mainNav a.icon{
+      position: absolute;
+      top: 1.6vh;
+      right: 20px;
+      display: block; 
+      text-align: center;       
+  }
+
+  @media screen and (max-width: 500px) {
+    .mainNav.responsive {position: fixed; width: 90%;}
+    .mainNav.responsive a.icon {
+      position: absolute;
+      right: 20px;
+      top: 1.6vh;
+    }
+    .mainNav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
 
 /* ------------------------------------------------------------------- */
 
@@ -103,6 +171,7 @@ text-align: center;
 }
 
 .about-section {
+  margin-top: 10vh;
   padding: 50px;
   background-color: whitesmoke;
   text-align: center;
