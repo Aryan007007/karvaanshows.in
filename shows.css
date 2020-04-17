@@ -31,6 +31,7 @@
 body{
     background: white;
     font-family: calibri;
+    line-height: 1.5; /*line spacing*/
 }
 
 
