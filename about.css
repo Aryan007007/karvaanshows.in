@@ -41,6 +41,7 @@ html {
 .mainNav{
   position: fixed;
   width: 100vw;
+  top: 0;
 
   background: #421D0A;
   text-align: center;
@@ -129,6 +130,7 @@ a.icon{
       display: block; 
       text-align: center;       
   }
+}
 
   @media screen and (max-width: 500px) {
     .mainNav.responsive {position: fixed; width: 90%;}
