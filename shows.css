@@ -6,11 +6,13 @@
   --shadow-nav: 0 4px 10px rgba(0, 0, 0, 0.4); 
 }
 
-*{
-    margin: auto;
-    box-sizing: border-box;
-  }
 
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;   
+  }
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -150,57 +152,58 @@ a.icon{
 
 /* ------------------------------------------------------------------- */
 
-/* Flip Box */
+/* Show boxes */
+.shows{
+  margin: 5vh 2vw;
+}
+.showcase{
+  margin-top: 2vh;
+  background-color:azure;
+  display: grid;
+  grid-template-columns: 1.25fr 2fr;
+  column-gap: 10px;
+  padding: 20px;
+  box-shadow: var(--shadow-btn);
+  justify-items: center;
+}
 
-.flip-box {
-  border-radius: 0;
-  height: 400px;
-  margin: 10vh 5% 2.5% 5%;
-  background-color: transparent;
+
+.show-img{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-auto-rows: minmax(150px, auto);
+  align-items: center;
+}
+
+.one{
+  height: 150px;
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  perspective: 1000px;
+  box-shadow: var(--shadow-nav);  
 }
 
-.flip-box-inner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.one img{
+  height: 150px;
+  max-width: 100%;
+  object-fit: cover;
+
+}
+
+.two{
   text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
 }
 
-.flip-box:hover .flip-box-inner {
-  transform: rotateX(180deg);
+.two a{
+  text-decoration: none;
 }
 
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+.show-text{
 
-.flip-box-front {
-  border-radius: 0;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
-  /* margin: 2.5% 5% 2.5% 5%; */
-  background-color:cornsilk;
+  background-color: aquamarine;
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  align-self: center;
 }
 
-.flip-box-back {
-  border-radius: 0;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
-  /* margin: 2.5% 5% 2.5% 5%; */
-  background-color:cornsilk;
-  text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  transform: rotateX(180deg);
-}
 
 /* --------------------------------------------------------------------- */
 
@@ -215,3 +218,20 @@ footer{
 }
   
   /* ------------------------------------------------------------- */
+
+  @media screen and (max-width: 500px){
+    .showcase{
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .show-text{
+      order: 1;
+    }
+    .show-img{
+      order:2;
+    }
+    .one, .one img{
+      border-radius: 10px;
+    }
+  } 

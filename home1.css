@@ -189,7 +189,7 @@ a.icon{
     margin:3vh 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .social-txt{
@@ -199,14 +199,15 @@ a.icon{
     font-size: 1.2rem;
 }
 .social-icons{
-    align-self: center;
+
+    justify-self: center;
+    
 }
 
 .social-icons a{
     color: blanchedalmond;
     font-size: 1.7rem;
     text-decoration: none;
-    vertical-align: middle;
 }
 
 .social-icons a:not(:first-child){
