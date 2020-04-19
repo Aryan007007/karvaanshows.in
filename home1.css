@@ -91,7 +91,7 @@ header{
 
 .mainNav a{
     text-decoration: none;
-    color: var(--secondary);
+    color: white;
     font-size: 1.6rem;
 }
 
@@ -193,7 +193,7 @@ a.icon{
 }
 
 .social-txt{
-    color: blanchedalmond;
+    color: white;
     justify-self: end;
     font-family: calibri;
     font-size: 1.2rem;
@@ -205,7 +205,7 @@ a.icon{
 }
 
 .social-icons a{
-    color: blanchedalmond;
+    color: white;
     font-size: 1.7rem;
     text-decoration: none;
 }

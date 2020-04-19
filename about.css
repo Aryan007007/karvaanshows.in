@@ -8,7 +8,6 @@
 body {
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: beige;
   line-height: 1.5; /*line spacing*/
 }
 
@@ -44,7 +43,7 @@ html {
   width: 100vw;
   top: 0;
 
-  background: #421D0A;
+  background: #006379;
   text-align: center;
   font-family: samarkannormal;
 
@@ -62,7 +61,7 @@ html {
 
 .mainNav a{
   text-decoration: none;
-  color: var(--secondary);
+  color: white;
   font-size: 1.6rem;
 }
 
@@ -171,12 +170,13 @@ a.icon{
   margin: 0 40px 80px 40px;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
 .about-section {
-  margin-top: 10vh;
+  margin-top: 15vh;
   padding: 50px;
-  background-color: whitesmoke;
+  background-color: #ad896f;
   text-align: center;
 }
 
@@ -184,11 +184,6 @@ a.icon{
   padding: 0 16px;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 .title {
   color: grey;
@@ -196,11 +191,12 @@ a.icon{
 
 .button {
   border: none;
+  border-radius: 5px;
   outline: 0;
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #0d152e;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -216,6 +212,10 @@ a.icon{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   }
+  .card, .card img{
+    border-radius: 5px;
+  }
+
 }
 
 

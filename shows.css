@@ -31,7 +31,7 @@
 
 
 body{
-    background: white;
+    background: #f1faff;
     font-family: calibri;
     line-height: 1.5; /*line spacing*/
 }
@@ -46,7 +46,7 @@ body{
   width: 100vw;
   top: 0;
 
-  background: #421D0A;
+  background: #412227;
   text-align: center;
   font-family: samarkannormal;
 
@@ -64,7 +64,7 @@ body{
 
 .mainNav a{
   text-decoration: none;
-  color: var(--secondary);
+  color: white;
   font-size: 1.6rem;
 }
 
@@ -154,11 +154,11 @@ a.icon{
 
 /* Show boxes */
 .shows{
-  margin: 5vh 2vw;
+  margin: 10vh 2vw;
 }
 .showcase{
-  margin-top: 2vh;
-  background-color:azure;
+  margin-top: 5vh;
+  background-color:#ffe9da;
   display: grid;
   grid-template-columns: 1.25fr 2fr;
   column-gap: 10px;
@@ -198,8 +198,7 @@ a.icon{
 }
 
 .show-text{
-
-  background-color: aquamarine;
+  padding: 0 15px;
   text-align: center;
   align-self: center;
 }
