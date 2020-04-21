@@ -8,3 +8,23 @@ function myFunction() {
     x.className = "mainNav";
   }
 }
+
+function myFunction2a() {
+  var x = document.getElementById("k1");
+  if (x.className === "try") {
+    x.className = "try-show";
+  } else {
+    x.className = "try";
+  }
+}
+
+
+function myFunction2d() {
+  var x = document.getElementById("instak4");
+  if (x.className === "k") {
+    x.className += " k-show";
+  } else {
+    x.className = "k";
+  }
+}
+

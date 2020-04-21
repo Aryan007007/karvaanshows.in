@@ -177,7 +177,8 @@ a.icon{
 .about-section {
   margin-top: 15vh;
   padding: 50px;
-  background-color: #ad896f;
+  color: #ac612c;
+  /* background-color: #ad896f; */
   text-align: center;
 }
 

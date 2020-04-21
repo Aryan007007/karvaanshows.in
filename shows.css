@@ -31,7 +31,7 @@
 
 
 body{
-    background: #412227;
+    background: #46272c;
     font-family: calibri;
     line-height: 1.5; /*line spacing*/
 }
@@ -42,7 +42,7 @@ body{
 /* Custom Navigation Bar */
 
 .mainNav{
-  position: relative;
+  position: fixed;
   width: 100vw;
   top: 0;
 
@@ -96,6 +96,7 @@ a.icon{
   }
 
   .mainNav{
+
       border-radius: 50px;
       top: 10px;
       left: 6vw;
@@ -136,7 +137,7 @@ a.icon{
 }
 
   @media screen and (max-width: 500px) {
-    .mainNav.responsive {position: relative; width: 90%;}
+    .mainNav.responsive {position: fixed; width: 90%;border-radius: 25px;}
     .mainNav.responsive a.icon {
       position: absolute;
       right: 20px;
@@ -154,19 +155,28 @@ a.icon{
 
 /* Show boxes */
 .shows{
-  margin: 10vh 2vw;
+  margin: 20vh 2vw;
 }
 .showcase{
   margin-top: 5vh;
   background-color:#ffe9da;
-  display: grid;
-  grid-template-columns: 1.25fr 2fr;
-  column-gap: 10px;
-  padding: 20px;
+  
   box-shadow: var(--shadow-btn);
   justify-items: center;
 }
 
+.limit{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 10px;
+  row-gap: 50px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.showcase>div:nth-child(n+3){
+  display: none;
+}
 
 .show-img{
   display:grid;
@@ -184,8 +194,9 @@ a.icon{
 
 .one img{
   height: 150px;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
+  object-position: top;
 
 }
 
@@ -203,6 +214,20 @@ a.icon{
   align-self: center;
 }
 
+.try{
+  display: none;
+}
+
+.try-show{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/* ======== Show more content ======== */
+.extra{
+  justify-self: center;
+}
+/* ------------------------------ */
 
 /* --------------------------------------------------------------------- */
 
@@ -219,7 +244,12 @@ footer{
   /* ------------------------------------------------------------- */
 
   @media screen and (max-width: 500px){
-    .showcase{
+    .limit{
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .showcase-extra{
       grid-template-columns: 1fr;
       gap: 20px;
     }
@@ -232,5 +262,8 @@ footer{
     }
     .one, .one img{
       border-radius: 10px;
+    }
+    .extra{
+      justify-self: center;
     }
   } 
