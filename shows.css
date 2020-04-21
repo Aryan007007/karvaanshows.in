@@ -179,6 +179,9 @@ a.icon{
 }
 
 .show-img{
+  background-color: rgba(255, 255, 255, 0.596);
+  border-radius: 10px;
+  padding: 1em;
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -219,8 +222,10 @@ a.icon{
 }
 
 .try-show{
+  padding: 5vh 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 5vh;
 }
 
 /* ======== Show more content ======== */
