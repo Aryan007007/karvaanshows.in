@@ -160,7 +160,8 @@ a.icon{
 .showcase{
   margin-top: 5vh;
   background-color:#ffe9da;
-  
+
+  border-radius: 5px;
   box-shadow: var(--shadow-btn);
   justify-items: center;
 }
@@ -179,7 +180,8 @@ a.icon{
 }
 
 .show-img{
-  background-color: rgba(255, 255, 255, 0.596);
+  box-shadow: var(--shadow-nav);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   padding: 1em;
   display:grid;
@@ -230,8 +232,16 @@ a.icon{
 
 /* ======== Show more content ======== */
 .extra{
+
   justify-self: center;
+
+
 }
+
+.frame-insta{
+  border-radius: 5px;
+}
+
 /* ------------------------------ */
 
 /* --------------------------------------------------------------------- */
@@ -249,6 +259,10 @@ footer{
   /* ------------------------------------------------------------- */
 
   @media screen and (max-width: 500px){
+    .shows{
+      margin-top: 15vh;
+    }
+
     .limit{
       grid-template-columns: 1fr;
       gap: 20px;

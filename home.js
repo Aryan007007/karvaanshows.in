@@ -19,12 +19,12 @@ function myFunction2a() {
 }
 
 
-function myFunction2d() {
-  var x = document.getElementById("instak4");
-  if (x.className === "k") {
-    x.className += " k-show";
+function myFunction2b() {
+  var x = document.getElementById("k2");
+  if (x.className === "try") {
+    x.className += " try-show";
   } else {
-    x.className = "k";
+    x.className = "try";
   }
 }
 
