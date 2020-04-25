@@ -175,7 +175,7 @@ a.icon{
   justify-items: center;
 }
 
-.showcase>div:nth-child(n+3){
+.showcase>div:nth-child(n+4){
   display: none;
 }
 
@@ -206,11 +206,8 @@ a.icon{
 }
 
 .two{
+  width: 100%;
   text-align: center;
-}
-
-.two a{
-  text-decoration: none;
 }
 
 .show-text{
@@ -219,11 +216,14 @@ a.icon{
   align-self: center;
 }
 
-.try{
+.accordion{
   display: none;
 }
 
-.try-show{
+.active{
+  transition: max-height 1s ease-out;
+  overflow: hidden;
+  max-height: 0;
   padding: 5vh 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -260,7 +260,7 @@ footer{
 
   @media screen and (max-width: 500px){
     .shows{
-      margin-top: 15vh;
+      margin-top: 7vh;
     }
 
     .limit{
@@ -284,5 +284,8 @@ footer{
     }
     .extra{
       justify-self: center;
+    }
+    .active{
+      transition: max-height 0.5s ease-in;
     }
   } 

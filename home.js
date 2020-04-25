@@ -9,22 +9,25 @@ function myFunction() {
   }
 }
 
-function myFunction2a() {
-  var x = document.getElementById("k1");
-  if (x.className === "try") {
-    x.className = "try-show";
-  } else {
-    x.className = "try";
-  }
+// drop down accordian
+
+var btn = document.getElementsByClassName("two");
+var acc = document.getElementsByClassName("accordion");
+var act = document.getElementsByClassName("active");
+var i;
+
+for (i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", function () {
+
+    var panel = this.nextElementSibling;
+    panel.classList.toggle("active")
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
 }
 
-
-function myFunction2b() {
-  var x = document.getElementById("k2");
-  if (x.className === "try") {
-    x.className += " try-show";
-  } else {
-    x.className = "try";
-  }
-}
+// drop down accordian
 
