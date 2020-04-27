@@ -155,7 +155,7 @@ a.icon{
 
 /* Show boxes */
 .shows{
-  margin: 13vh 2vw;
+  margin: 13vh 2vw 5vh 2vw;
 }
 .showcase{
   margin-top: 5vh;
@@ -205,8 +205,16 @@ a.icon{
 }
 
 .two{
+  
+  cursor: pointer;
+  background: none;
+  border: none;
   width: 100%;
   text-align: center;
+  transition: font-size 0.5s ease;
+}
+.two:hover{
+  font-size: 2em;
 }
 
 .show-text{
@@ -263,11 +271,6 @@ footer{
     }
 
     .limit{
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-
-    .showcase-extra{
       grid-template-columns: 1fr;
       gap: 20px;
     }
