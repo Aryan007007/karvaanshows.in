@@ -12,8 +12,6 @@ function myFunction() {
 // drop down accordian
 
 var btn = document.getElementsByClassName("two");
-var acc = document.getElementsByClassName("accordion");
-var act = document.getElementsByClassName("active");
 var i;
 
 for (i = 0; i < btn.length; i++) {
@@ -24,7 +22,7 @@ for (i = 0; i < btn.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = panel.scrollHeight + 'px';
     }
   });
 }

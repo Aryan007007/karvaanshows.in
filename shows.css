@@ -155,15 +155,18 @@ a.icon{
 
 /* Show boxes */
 .shows{
-  margin: 20vh 2vw;
+  margin: 13vh 2vw;
 }
 .showcase{
   margin-top: 5vh;
   background-color:#ffe9da;
-
   border-radius: 5px;
   box-shadow: var(--shadow-btn);
   justify-items: center;
+}
+
+.showcase:first-child{
+  padding-top: 2vh;
 }
 
 .limit{
@@ -173,10 +176,6 @@ a.icon{
   row-gap: 50px;
   padding: 20px;
   justify-items: center;
-}
-
-.showcase>div:nth-child(n+4){
-  display: none;
 }
 
 .show-img{
@@ -217,18 +216,17 @@ a.icon{
 }
 
 .accordion{
-  display: none;
-  transition: max-height 1s ease-out;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .active{
-  transition: max-height 1s ease-out;
-  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  gap: 20px 5vh;
   max-height: 0;
   padding: 5vh 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: 5vh;
 }
 
 /* ======== Show more content ======== */
@@ -284,9 +282,19 @@ footer{
       border-radius: 10px;
     }
     .extra{
+      display: inline-block;
       justify-self: center;
     }
+    .extra:not(:first-child){
+      margin-left: 40px;
+    }
     .active{
-      transition: max-height 0.5s ease-in;
+      margin: 0 20px;
+      display: block;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      white-space: nowrap;
+      transition: max-height 0.5s ease-out;
+
     }
   } 
