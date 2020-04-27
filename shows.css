@@ -218,6 +218,7 @@ a.icon{
 
 .accordion{
   display: none;
+  transition: max-height 1s ease-out;
 }
 
 .active{

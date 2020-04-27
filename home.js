@@ -19,7 +19,7 @@ var i;
 for (i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", function () {
 
-    var panel = this.nextElementSibling;
+    var panel = this.previousElementSibling;
     panel.classList.toggle("active")
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
