@@ -256,7 +256,7 @@ a.icon{
 /* 'footer */
 
 footer{
-  color: var(--secondary);
+  color: white;
   text-align: center;
   padding: 10vh 0;
   overflow: hidden;
